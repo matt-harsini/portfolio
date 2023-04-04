@@ -1,7 +1,14 @@
-import { useState } from "react";
+import { Hero, Navbar } from "./components";
 
 function App() {
-  return <div>App</div>;
+  return (
+    <>
+      <main>
+        <Navbar />
+        <Hero />
+      </main>
+    </>
+  );
 }
 
 export default App;
