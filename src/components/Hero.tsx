@@ -1,3 +1,6 @@
+import { useState, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { Points, PointMaterial, Preload } from "@react-three/drei";
 import styles from "./Hero.module.css";
 
 function Hero() {

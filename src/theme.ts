@@ -1,5 +1,5 @@
 import { extendTheme, ThemeConfig } from "@chakra-ui/react";
-import "@fontsource/open-sans";
+import "@fontsource/inter";
 
 const config: ThemeConfig = {
   initialColorMode: "dark",
@@ -7,7 +7,7 @@ const config: ThemeConfig = {
 };
 
 const fonts = {
-  body: `'Open Sans', sans-serif`,
+  body: `'Inter', sans-serif`,
 };
 
 const fontSizes = {
