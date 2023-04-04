@@ -1,8 +1,10 @@
-import { useColorMode, Button } from "@chakra-ui/react";
+import { useContext } from "react";
+import { Button } from "@chakra-ui/react";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
+import { ThemeContext } from "../App";
 
 function ToggleColorMode() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode, toggleColorMode } = useContext(ThemeContext);
   return (
     <Button onClick={() => toggleColorMode()} size="lg">
       {colorMode === "dark" ? (
