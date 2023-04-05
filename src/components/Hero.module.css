@@ -18,3 +18,8 @@
   font-size: var(--step-5);
   text-transform: uppercase;
 }
+
+.icon-button {
+  position: absolute !important;
+  bottom: 64px !important;
+}

@@ -2,7 +2,7 @@ import { createContext } from "react";
 import { Hero, Navbar } from "./components";
 import { useColorMode } from "@chakra-ui/react";
 
-export const ThemeContext = createContext<any>(null);
+export const ThemeContext = createContext<object>({});
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();

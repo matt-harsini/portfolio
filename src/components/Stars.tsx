@@ -7,20 +7,18 @@ import styles from "./Stars.module.css";
 
 function Stars(props: any) {
   const ref = useRef<any>();
-  const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
+  const sphere = random.inSphere(new Float32Array(7500), { radius: 1.1 });
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 10;
   });
-  const { colorMode } = useContext(ThemeContext);
-  console.log(colorMode);
-
+  const { colorMode } = useContext<any>(ThemeContext);
   return (
-    <group rotation={[0, 0, Math.PI / 4]}>
+    <group rotation={[0, 0, Math.PI / 2]}>
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color={colorMode === 'dark' ? '#2B6CB0' : '#171923'}
+          color={colorMode === "dark" ? "#2B6CB0" : "#171923"}
           size={0.002}
           sizeAttenuation={true}
           depthWrite={false}

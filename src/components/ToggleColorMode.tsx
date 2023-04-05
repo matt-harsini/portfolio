@@ -4,7 +4,7 @@ import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 import { ThemeContext } from "../App";
 
 function ToggleColorMode() {
-  const { colorMode, toggleColorMode } = useContext(ThemeContext);
+  const { colorMode, toggleColorMode } = useContext<any>(ThemeContext);
   return (
     <Button onClick={() => toggleColorMode()} size="lg">
       {colorMode === "dark" ? (
